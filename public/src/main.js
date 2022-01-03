@@ -73,7 +73,11 @@ function gameLoop(timeStamp) {
 
     for (let i = 0; i < positions.length; i++) {
 
-        ctx.fillRect(positions[i][0] - 10, positions[i][1] - 10, 20, 20)
+        if (positions[i] !== null) {
+
+            ctx.fillRect(positions[i][0] - 10, positions[i][1] - 10, 20, 20)
+
+        }
 
     }
 
